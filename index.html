@@ -14,7 +14,7 @@
     <p>Ingresa el texto aqui</p>
     <input type="text" id="textoUsuario" class="container__input">
     <div>
-        <p class="texto_encriptado"></p>
+        <p id="textoEncriptado" class="texto_encriptado"></p>
     </div>
     <div>
         <img src="imagenes/ExclamationCircleFill.png">
@@ -22,10 +22,11 @@
     </div>
         
     <div class="contenedor__boton">
-        <button class="contenedor__boton">Encriptar!</button>
-        <button class="contenedor__boton">Desencriptar!</button>
+        <button onclick="obtenerTexto()" class="contenedor__boton">Encriptar!</button>
+        <button onclick="obtenerTexto()" class="contenedor__boton">Desencriptar!</button>
     </div>
 
-    
+    <script src="app.js"></script>
+
 </body>
 </html>
