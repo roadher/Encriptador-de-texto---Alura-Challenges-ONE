@@ -7,8 +7,9 @@ La letra "a" es convertida para "ai"
 La letra "o" es convertida para "ober"
 La letra "u" es convertida para "ufat"
 */
-let texto;
-let textoEncriptado;
+//var texto=" ";
+//var textoEncriptado=" ";
+//var textoDesencriptado=" ";
 
 function asignarTextoElemento(elemento, texto) {
     let elementoHTML = document.querySelector(elemento);
@@ -16,12 +17,75 @@ function asignarTextoElemento(elemento, texto) {
     return;
 }
 function obtenerTexto(){
-    let textoUsuario = document.getElementById('textoUsuario').value;
-    console.log(textoUsuario);
+    let textoUsuario = document.getElementById('textoUsuario').value; //El texto se guarda como un array. Cada letra es un posicion del array.
+    //console.log(textoUsuario);
+    return textoUsuario;
+}
+
+function encriptarTexto(mensaje){
+    let texto = mensaje;
+    let textoEncriptado =" ";
+    //console.log(texto);
+    
+    for(let i=0;i<texto.length;i++){
+        if(texto[i]=="a"){
+            textoEncriptado = textoEncriptado + "ai"; 
+        }else if(texto[i]=="e"){
+            textoEncriptado = textoEncriptado + "enter";
+        }
+        else if(texto[i]=="i"){
+            textoEncriptado = textoEncriptado + "imes";
+        }
+        else if(texto[i]=="o"){
+            textoEncriptado = textoEncriptado + "ober";
+        }
+        else if(texto[i]=="u"){
+            textoEncriptado = textoEncriptado + "ufat";
+        }else {
+            textoEncriptado=textoEncriptado + texto[i];
+            //console.log(texto);
+            //console.log(textoEncriptado[i+1]);
+            //console.log(i);
+        }
+    }
+    console.log(textoEncriptado);
+}
+
+function desencriptarTexto(mensaje){
+    let texto=mensaje;
+    textoDesencriptado= " ";
+    for(let i=0;i<texto.length;i++){
+        if(texto[i]=="a"){
+            textoDesencriptado = textoDesencriptado + "a";
+            i++;
+        }else if(texto[i]=="e"){
+            textoDesencriptado = textoDesencriptado + "e";
+            i=i+4;
+        }else if(texto[i]=="i"){
+            textoDesencriptado = textoDesencriptado + "i";
+            i=i+3;
+        }else if(texto[i]=="o"){
+            textoDesencriptado = textoDesencriptado + "o";
+            i=i+3;
+        }else if(texto[i]=="u"){
+            textoDesencriptado = textoDesencriptado + "u";
+            i=i+3;
+        }else{
+            textoDesencriptado = textoDesencriptado + texto[i];
+        }
+    }
+   console.log(textoDesencriptado);
+
 }
 
 function encriptar(){
-    
+    let mensaje = obtenerTexto();
+    encriptarTexto(mensaje);
+}
+
+function desencriptar(){
+    let mensaje=obtenerTexto();
+    desencriptarTexto(mensaje);
 }
 
 
