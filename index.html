@@ -14,11 +14,10 @@
             <div class="cajaMensajeInput">
                 <textarea name="textarea" id="textoUsuario" rows="20" cols="50">Ingresa el texto aqui</textarea>
             </div>
-           
-            <div>
-                <img src="imagenes/ExclamationCircleFill.png">
-                <p class="comentario"> Solo letras minusculas y sin acentos</p>
-            </div>
+                   
+            <img src="imagenes/ExclamationCircleFill.png">
+            <p class="comentario"> Solo letras minusculas y sin acentos</p>
+            
                 
             <div class="contenedor__boton">
                 <button onclick="encriptar()" class="contenedor__boton">Encriptar!</button>
@@ -27,7 +26,9 @@
         </div>
     
         <div class="cajaRespuesta">
-            <img src="imagenes/Muñeco.png" class="imagenMuñeco">
+            <img src="imagenes/Muñeco.png" class="imagenMuñeco" id="muñeco">
+            <p2 id="p2">Ningun mensaje fue encontrado</p2>
+            <p2 id="p21">Ingresa el texto que desea encriptar o desencriptar</p2>
             <p1 id="textoEncriptado" class="texto_encriptado"></p1>
         </div>
     </main>
