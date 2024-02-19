@@ -49,6 +49,7 @@ function encriptarTexto(mensaje){
         }
     }
     console.log(textoEncriptado);
+    return textoEncriptado;
 }
 
 function desencriptarTexto(mensaje){
@@ -75,18 +76,22 @@ function desencriptarTexto(mensaje){
         }
     }
    console.log(textoDesencriptado);
-
+   return textoDesencriptado;
 }
 
 function encriptar(){
     let mensaje = obtenerTexto();
-    encriptarTexto(mensaje);
+    mensaje = encriptarTexto(mensaje);
+    asignarTextoElemento('p1',mensaje);
 }
 
 function desencriptar(){
     let mensaje=obtenerTexto();
-    desencriptarTexto(mensaje);
+    mensaje = desencriptarTexto(mensaje);
+    asignarTextoElemento('p1',mensaje);
 }
+
+
 
 
 

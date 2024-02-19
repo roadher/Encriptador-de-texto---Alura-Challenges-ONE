@@ -1,0 +1,46 @@
+body{
+    background: #F3F5FC; /*<!--Cambio el fondo de toda la estructura-->*/
+}
+
+
+.cajaDerecha{
+    /*width: 940px;*/
+    height: 550px;
+    width: 50%;
+    display: inline-block;
+    text-align: left;
+}
+
+.cajaMensajeInput{
+    
+}
+
+#textoUsuario{
+    background: #F3F5FC;
+    display: inline-block;
+    border: none;
+}
+
+#contenedor__boton{
+
+}
+
+.cajaRespuesta{
+    width: 400px;
+    height: 550px;
+    background: #FFFFFF;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    border-radius: 32px;
+    /*text-align: center;
+    border: 2px solid #000000;
+    border-radius: 10px;*/
+}
+
+.imagenMuñeco{
+    width: 336px;
+    height: 304px;
+
+}
+
