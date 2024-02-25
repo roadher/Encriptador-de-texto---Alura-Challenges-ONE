@@ -1,47 +1,112 @@
 body{
-    background: #F3F5FC; /*<!--Cambio el fondo de toda la estructura-->*/
+    background-color: #F3F5FC;
 }
+ header{
 
-main{
-    text-align: center;
-}
+ }
 
-.cajaDerecha{
-    /*width: 940px;*/
-    height: 550px;
-    width: 50%;
+ main{
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .areaTrabajo{
+    width: 1200px;
+    height: 553px;
+    /*margin: 0 auto;*/
+    margin-left: auto;
+    margin-right: 28px;
+    font-family: 'inter', sans-serif;
+ }
+
+ .cajaIzquierda{
+    width: 750px;
+    height: 500px;
+    padding-top: 20px;
+    padding-left: 40px;
     display: inline-block;
-    text-align: left;
+ }
+
+.cajaMensajeInput{
+
 }
 
 #textoUsuario{
-    background: #F3F5FC;
-    display: inline-block;
+    width: 680px;
+    height: 400px;
+    background-color: #F3F5FC;
     border: none;
+    font-family: 'inter', sans-serif;
+    font-size: 32px;
+    color: #0A3871;
+}
+
+.cajaComentario{
+}
+
+.comentario{
+    display: inline-block;
+}
+
+.contenedor__boton{
+    width: 682px;
+    height: 67px;
+}
+
+.Boton1{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    margin-left: 0px;
+    margin-right: 10px;
+    background: #0A3871;
+    color: #FFFFFF;
+    border-color: #0A3871;
+}
+
+.Boton2{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    margin-left: 10px;
+    margin-right: 0px;
+    background: #D8DFE8;
+    border-color: #0A3871;
 }
 
 .cajaRespuesta{
     width: 400px;
-    height: 550px;
+    height: 590px;
+    position: absolute;
+    left: 67%;
+    top: 4%;
     background: #FFFFFF;
     display: inline-block;
-    vertical-align: top;
     text-align: center;
-    box-sizing: border-box;
     border-radius: 32px;
+}
+
+
+.cajaImagen{
+    width: 336px;
+    height: 304px;
+    margin: 30% auto;
 }
 
 .imagenMuñeco{
     width: 336px;
     height: 304px;
-
 }
 
-#textoEncriptado{
+
+.textoRespuesta{
     width: 336px;
-    position: relative;
-    left: 0%;
-    top: 0%
+    font-size: 24px;
+    color: #495057;
+    text-align: left;
+    display: inline-block;
+    position: absolute;
+    left: 5%;
+    top: 6%;
 }
-
 

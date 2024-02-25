@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.google.com/share?selection.family=Inter:wght@100;200;300;400;500;600;700;800;900" rel="stylesheet">
     <title>Encriptador de Texto</title>
 </head>
 <body>
@@ -10,27 +11,35 @@
         <img src="imagenes/Logo.png">
     </header>
     <main>
-        <div class="cajaDerecha">          
-            <div class="cajaMensajeInput">
-                <textarea name="textarea" id="textoUsuario" rows="20" cols="50">Ingresa el texto aqui</textarea>
+        <div class="areaTrabajo">
+            <div class="cajaIzquierda">          
+                <div class="cajaMensajeInput">
+                    <textarea name="textarea" id="textoUsuario" rows="20" cols="50">Ingresa el texto aqui</textarea>
+                </div>
+                <div class="cajaComentario">
+                    <img src="imagenes/ExclamationCircleFill.png" id="imgInterogacion">
+                    <p class="comentario"> Solo letras minusculas y sin acentos</p>
+                </div>    
+                         
+                <div class="contenedor__boton">
+                    <button onclick="encriptar()" class="Boton1">Encriptar!</button>
+                    <button onclick="desencriptar()" class="Boton2">Desencriptar!</button>
+                </div>
             </div>
-                   
-            <img src="imagenes/ExclamationCircleFill.png">
-            <p class="comentario"> Solo letras minusculas y sin acentos</p>
-            
-                
-            <div class="contenedor__boton">
-                <button onclick="encriptar()" class="contenedor__boton">Encriptar!</button>
-                <button onclick="desencriptar()" class="contenedor__boton">Desencriptar!</button>
+        
+            <div class="cajaRespuesta">
+                <div class="cajaImagen" id="CajaImagen">
+                    <img src="imagenes/Muñeco.png" class="imagenMuñeco" id="muñeco">
+                    <h2 id="p2" >Ningun mensaje fue encontrado</h2>
+                    <p2 id="p21">Ingresa el texto que desea encriptar o desencriptar</p2>
+                </div>
+                <div class="textoRespuesta">
+                    <p1 id="textoEncriptado" class="texto_encriptado"></p1>
+                    
+                </div>
             </div>
         </div>
-    
-        <div class="cajaRespuesta">
-            <img src="imagenes/Muñeco.png" class="imagenMuñeco" id="muñeco">
-            <p2 id="p2">Ningun mensaje fue encontrado</p2>
-            <p2 id="p21">Ingresa el texto que desea encriptar o desencriptar</p2>
-            <p1 id="textoEncriptado" class="texto_encriptado"></p1>
-        </div>
+
     </main>
     
 

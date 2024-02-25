@@ -24,7 +24,7 @@ function obtenerTexto(){
 
 function ocultarImagen(elemento) {
     document.getElementById(elemento).style.display = "none";
-    //document.getElementById("myP2").style.visibility = "hidden"; //elimino objeto
+    //document.getElementById(elemento).style.visibility = "hidden"; //elimino objeto
   }
 
 function encriptarTexto(mensaje){
@@ -86,18 +86,14 @@ function desencriptarTexto(mensaje){
 
 function encriptar(){
     let mensaje = obtenerTexto();
-    ocultarImagen("muñeco");
-    ocultarImagen("p2");
-    ocultarImagen("p21");
+    ocultarImagen("CajaImagen");
     mensaje = encriptarTexto(mensaje);
     asignarTextoElemento('p1',mensaje);
 }
 
 function desencriptar(){
     let mensaje=obtenerTexto();
-    ocultarImagen("muñeco");
-    ocultarImagen("p2");
-    ocultarImagen("p21");
+    ocultarImagen("CajaImagen");
     mensaje = desencriptarTexto(mensaje);
     asignarTextoElemento('p1',mensaje);
 }
